@@ -54,6 +54,8 @@ app.get('*', (req, res) => res.json({ error: 'Not Found!' }))
 
 /**Connect MongoDB & Start Server */
 const uri = `mongodb+srv://thanhandp147:0556274329@cluster0-ybhcl.azure.mongodb.net/test?retryWrites=true&w=majority`;
+//pass Mongo của m: @An0556274329, ở trên thiếu "@An"...
+
 // const uri = 'mongodb://localhost:27017/MongoDB-Social-Network';
 mongoose.connect(uri);
 mongoose.connection.once('open', () => {
